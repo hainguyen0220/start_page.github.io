@@ -1,0 +1,40 @@
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.hi-icon:before {
+	font-size: 48px;
+	display: block;
+
+}
+
+.hi-icon-screen:before {
+	content: "\e00a";
+}
+
+#set-5 {
+	background: #702fa8;
+}
+
+/* Effect 5 */
+
+.hi-icon:hover:before {
+	animation: toBottomFromTop 0.3s forwards;
+}
+
+@keyframes toBottomFromTop {
+	49% {
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
